@@ -4,7 +4,7 @@
   "description": "A react wrapper component for the motion one animaion library",
   "author": "schmt5",
   "license": "Apache-2.0",
-  "repository": "ovieokeh/npm-react-typescript-template",
+  "repository": "https://github.com/schmt5/npm-react-typescript-template",
   "main": "dist/index.js",
   "engines": {
     "node": ">=8",
