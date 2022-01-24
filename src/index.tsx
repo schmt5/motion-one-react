@@ -1,13 +1,14 @@
 import * as React from 'react';
 import { animate } from 'motion';
 
-interface IMotionOne {
+interface IMotionOne extends React.HTMLAttributes<HTMLElement> {
   children: React.ReactNode;
   animation: any;
   transition: any;
+  as?: React.ElementType;
 }
 
-const MotionOne: React.FC<IMotionOne> = ({ children, animation, transition }) => {
+const MotionOne: React.FC<IMotionOne> = ({ children, animation, transition, as: Tag='div' }) => {
   const ref = React.useRef<any>(null);
 
   React.useEffect(() => {
@@ -19,9 +20,9 @@ const MotionOne: React.FC<IMotionOne> = ({ children, animation, transition }) =>
   }, [ref, children, animation, transition]);
 
   return (
-    <div ref={ref}>
+    <Tag ref={ref}>
       {children}
-    </div>
+    </Tag>
   );
 };
 
