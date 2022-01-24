@@ -1,6 +1,6 @@
 {
   "name": "motion-one-react",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A react wrapper component for the motion one animaion library",
   "author": "schmt5",
   "license": "Apache-2.0",
