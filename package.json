@@ -15,8 +15,8 @@
     "start": "rollup -c -w"
   },
   "peerDependencies": {
-    "react": ">= 16.8.0 < 2",
-    "react-dom": ">= 16.8.0 < 2",
+    "react": "^16 || ^17 || ^18",
+    "react-dom": "^16 || ^17 || ^18",
     "motion": "^10.6.0"
   },
   "devDependencies": {
