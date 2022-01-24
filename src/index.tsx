@@ -1,10 +1,28 @@
-import * as React from 'react'
-import './styles.scss'
+import * as React from 'react';
+import { animate } from 'motion';
 
-const Package: React.FC = () => (
-  <div className="package">
-    <h2>Do cool stuff</h2>
-  </div>
-)
+interface IMotionOne {
+  children: React.ReactNode;
+  animation: any;
+  transition: any;
+}
 
-export default Package
+const MotionOne: React.FC<IMotionOne> = ({ children, animation, transition }) => {
+  const ref = React.useRef<any>(null);
+
+  React.useEffect(() => {
+    animate(
+      ref.current,
+      animation,
+      transition,
+    );
+  }, [ref, children, animation, transition]);
+
+  return (
+    <div ref={ref}>
+      {children}
+    </div>
+  );
+};
+
+export default MotionOne

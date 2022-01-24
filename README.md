@@ -1,8 +1,16 @@
-# npm-react-typescript-template
+# Motion One React Component
 
-A template for publishing a React + TypeScript package to npm
+A react wrapper component for the motion one animaion library
 
 ## How to use
+
+`
+<MotionOne
+    animation={{x: 200}},
+    transition={{duration: 1}}
+>
+    <h1>Heading</h1>
+`
 
 Fork this repo, clone it to your local computer, and edit the `package.json` along with every other required file to match your project.
 Write the code for your package in TypeScript and Sass, compile it, and publish it to [npm](https://npmjs.com).
